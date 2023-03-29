@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for My Event</title>
+</head>
+<body>
+    <form action="thankyou.html" method="get">
+    <table width="900px" align="center">
+
+        <tr align="center">
+            <td colspan="2">
+                <h2>Register for My Event</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="fullname">Enter your Full Name:</label>
+            </td>
+            <td>
+                <input type="text" id="fullname" size="25" maxlength="25" required placeholder="Fullname" name="fullname">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="username">Select a Username:</label>
+            </td>
+            <td>
+                <input type="text" id="username" size="25" maxlength="15" placeholder="Select Username" required name="username">
+            </td>
+        </tr>
+        <tr>
+            <td><label for="psw">Enter a Password:</label></td>
+            <td><input type="password" size="25" maxlength="10" minlength="6" placeholder="Password min 6 max 10 chars" id="psw" required name="psw"></td>
+        </tr>
+        <tr>
+            <td><label for="Female">Select your Gender:</label></td>
+            <td><input type="radio" id="Female" name="gender" value="Female">Female
+            <input type="radio" name="gender" id="Male" value="Male">Male
+            </td>
+        </tr>
+        <tr>
+            <td><label for="mailer1">Check for our Mailers:</label></td>
+            <td><input type="checkbox" name="mailer1" id="mailer1" value="Fashion" checked>Fashion Magazine
+            <input type="checkbox" name="mailer2" id="mailer2" value="News">Latest News
+            </td>
+        </tr>
+        <tr>
+            <td><label for="dob">Enter your Date of Birth:</label></td>
+            <td><input type="date" name="dob" id="dob" required></td>
+        </tr>
+        <tr>
+            <td><label for="photo">Upload your Photo:</label></td>
+            <td><input type="file" name="photo" id="photo" ></td>
+        </tr>
+        <tr>
+            <td><label for="country">Select your Country:</label></td>
+            <td>
+                <select name="country" id="country">
+                    <option value="#"></option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="address">Enter your Address:</label></td>
+            <td>
+                <textarea name="address" id="address" cols="30" rows="3" placeholder="Enter ypur Address here">Enter ypur Address here</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="browser">Choose your browser from the list:</label></td>
+            <td><input list="browsers" name="browser" id="browser">
+
+                <datalist id="browsers">
+                  <option value="Edge">
+                  <option value="Firefox">
+                  <option value="Chrome">
+                  <option value="Opera">
+                  <option value="Safari">
+                </datalist></td>
+        </tr>
+        <tr>
+            <td><input type="color"></td>
+            <td><input type="image" src="mobile_icon.jpg" height="75" width="150"></td>
+
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit my Form"></td>
+            <td><input type="Reset" value="Reset the Form"></td>
+        </tr>
+
+    </table>
+    </form>
+</body>
+</html>
